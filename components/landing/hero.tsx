@@ -97,6 +97,23 @@ function Hero() {
           />
         </motion.div>
       </div>
+
+      <div className="w-full flex justify-center items-center mt-10 mb-10">
+        <h1 className="text-black text-md">
+          2024 © Alc AI <span className="mx-[1px]">|</span> Made by{" "}
+          <a
+            href="https://x.com/khushaal_04"
+            target="_blank"
+            className="underline"
+          >
+            Khushaal
+          </a>
+          <span className="mx-[4px]">|</span>
+          <Link className=" underline" href="/privacy-policy">
+            Privacy Policy
+          </Link>
+        </h1>
+      </div>
     </div>
   );
 }

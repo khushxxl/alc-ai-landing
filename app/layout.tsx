@@ -27,17 +27,17 @@ const poppins_bold = Poppins({
 export const metadata: Metadata = {
   title: "Alc AI - Your Smart Alcohol AI Assistant",
   description:
-    "Experience the future of responsible drinking with AI-powered insights and recommendations",
+    "Capture & Identify alcohol brands, ingredients, and more with Alc AI",
   metadataBase: new URL("https://alc-ai.vercel.app"),
   openGraph: {
     title: "Alc AI - Your Smart Alcohol AI Assistant",
     description:
-      "Experience the future of responsible drinking with AI-powered insights and recommendations",
+      "Capture & Identify alcohol brands, ingredients, and more with Alc AI",
     url: "https://alc-ai.vercel.app",
     siteName: "Alc AI",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
       },
@@ -48,9 +48,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Alc AI - Your Smart Alcohol AI Assistant",
-    description:
-      "Experience the future of responsible drinking with AI-powered insights and recommendations",
-    images: ["/twitter-image.png"],
+    description: "Identify alcohol brands, ingredients, and more with Alc AI",
+    images: "/opengraph-image.png",
   },
 };
 
