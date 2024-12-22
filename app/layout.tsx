@@ -25,16 +25,32 @@ const poppins_bold = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nextjs Boilerplate",
+  title: "Alc AI - Your Smart Alcohol AI Assistant",
   description:
-    "actually ship(fast) - a simple to use boilerplate right out of the box with auth, payments and db functions all packed with in!",
-  twitter: {
-    card: "summary_large_image", // For a large Twitter card
-    site: "https://boilerplate-nextjs-delta.vercel.app/",
-    title: "actually ship(fast) - Nextjs Boilerplate",
+    "Experience the future of responsible drinking with AI-powered insights and recommendations",
+  metadataBase: new URL("https://alc-ai.vercel.app"),
+  openGraph: {
+    title: "Alc AI - Your Smart Alcohol AI Assistant",
     description:
-      "actually ship(fast) - a simple to use boilerplate right out of the box with auth, payments and db functions all packed with in!",
-    images: "/twitter-image.png", // Twitter image
+      "Experience the future of responsible drinking with AI-powered insights and recommendations",
+    url: "https://alc-ai.vercel.app",
+    siteName: "Alc AI",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alc AI - Your Smart Alcohol AI Assistant",
+    description:
+      "Experience the future of responsible drinking with AI-powered insights and recommendations",
+    images: ["/twitter-image.png"],
   },
 };
 
@@ -46,31 +62,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:site"
-          content="https://boilerplate-nextjs-delta.vercel.app/"
-        />
-        <meta
-          name="twitter:title"
-          content="actually ship(fast) - Nextjs Boilerplate"
-        />
-        <meta
-          name="twitter:description"
-          content="actually ship(fast) - a simple to use boilerplate right out of the box with auth, payments and db functions all packed with in!"
-        />
-        <meta name="twitter:image" content="/twitter-image.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <body
         className={`${poppins.variable} ${poppins_extrabold.variable} ${poppins_bold.variable}`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
           <Analytics />
         </ThemeProvider>
