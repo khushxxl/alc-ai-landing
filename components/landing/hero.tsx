@@ -98,9 +98,10 @@ function Hero() {
         </motion.div>
       </div>
 
-      <div className="w-full flex justify-center items-center mt-10 mb-10">
-        <h1 className="text-black text-md">
-          2024 © Alc AI <span className="mx-[1px]">|</span> Made by{" "}
+      <div className="w-full flex flex-col md:flex-row justify-center items-center mt-10 mb-10 gap-4">
+        <h3 className="text-black text-md">2024 © Alc AI</h3>
+        <h3 className="text-black text-md">
+          Made by{" "}
           <a
             href="https://x.com/khushaal_04"
             target="_blank"
@@ -108,11 +109,12 @@ function Hero() {
           >
             Khushaal
           </a>
-          <span className="mx-[4px]">|</span>
-          <Link className=" underline" href="/privacy-policy">
+        </h3>
+        <h3 className="text-black text-md">
+          <Link className="underline" href="/privacy-policy">
             Privacy Policy
           </Link>
-        </h1>
+        </h3>
       </div>
     </div>
   );
