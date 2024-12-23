@@ -7,15 +7,7 @@ import IphoneMockup from "../../app/assets/iphone-mockup.png";
 
 function Hero() {
   return (
-    <div
-      style={{
-        backgroundImage: "url(https://i.ibb.co/NNr0wGs/cosmic-wallpaper.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        minHeight: "100vh",
-      }}
-      className="w-full relative overflow-hidden"
-    >
+    <div className="w-full relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -79,7 +71,6 @@ function Hero() {
               alt="logo"
               height={200}
               width={150}
-              className=""
             />
           </motion.div>
         </motion.div>
@@ -92,30 +83,10 @@ function Hero() {
           <Image
             src={IphoneMockup}
             alt="Alc AI App Interface"
-            className=""
             height={600}
             priority
           />
         </motion.div>
-      </div>
-
-      <div className="w-full flex flex-col md:flex-row justify-center items-center mt-10 mb-10 gap-4">
-        <h3 className="text-black text-md">2024 © Alc AI</h3>
-        <h3 className="text-black text-md">
-          Made by{" "}
-          <a
-            href="https://x.com/khushaal_04"
-            target="_blank"
-            className="underline"
-          >
-            Khushaal
-          </a>
-        </h3>
-        <h3 className="text-black text-md">
-          <Link className="underline" href="/privacy-policy">
-            Privacy Policy
-          </Link>
-        </h3>
       </div>
     </div>
   );
