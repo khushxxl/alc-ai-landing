@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   title: "Alc AI - Your Smart Alcohol AI Assistant",
   description:
     "Capture & Identify alcohol brands, ingredients, and more with Alc AI",
-  metadataBase: new URL("https://alc-ai.vercel.app"),
+  metadataBase: new URL("https://www.alcai.me/"),
   openGraph: {
     title: "Alc AI - Your Smart Alcohol AI Assistant",
     description:
       "Capture & Identify alcohol brands, ingredients, and more with Alc AI",
-    url: "https://alc-ai.vercel.app",
+    url: "https://www.alcai.me/",
     siteName: "Alc AI",
     images: [
       {
@@ -62,11 +62,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="https://www.alcai.me/" />
+        <meta
+          name="twitter:title"
+          content="Alc AI - Your Smart Alcohol AI Assistant"
+        />
+        <meta
+          name="twitter:description"
+          content="Capture & Identify alcohol brands, ingredients, and more with Alc AI"
+        />
+        <meta name="twitter:image" content="/opengraph-image.png" />
       </Head>
       <body
         className={`${poppins.variable} ${poppins_extrabold.variable} ${poppins_bold.variable}`}
