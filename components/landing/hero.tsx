@@ -63,8 +63,9 @@ function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Experience the future of responsible drinking with AI-powered
-            insights and recommendations
+            Capture & Identify alcohol brands, ingredients, and more with
+            <br />
+            Alc AI
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
