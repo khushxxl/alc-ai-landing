@@ -58,7 +58,7 @@ function Working() {
           ))}
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -74,7 +74,7 @@ function Working() {
             height={50}
             className="mx-auto hover:opacity-80 transition-opacity cursor-pointer"
           />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
