@@ -63,16 +63,23 @@ function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
+            className="flex flex-col items-center justify-center"
           >
-            <h1 className="text-white text-2xl font-bold mt-3">Coming Soon</h1>
-            {/* <Image
-              src={
-                "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-              }
-              alt="logo"
-              height={200}
-              width={150}
-            /> */}
+            <h1 className="text-white text-2xl font-bold mt-3">
+              Now Available on the App Store
+            </h1>
+
+            <Link href={"https://apps.apple.com/gb/app/alc-ai/id6739513699"}>
+              <Image
+                src={
+                  "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                }
+                alt="logo"
+                height={200}
+                width={150}
+                className="mt-3"
+              />
+            </Link>
           </motion.div>
         </motion.div>
 
@@ -80,7 +87,7 @@ function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-14"
+          className="mt-10"
         >
           <Image
             src={IphoneMockup}

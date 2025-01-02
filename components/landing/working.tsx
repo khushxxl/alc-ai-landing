@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 function Working() {
   const steps = [
@@ -58,7 +59,7 @@ function Working() {
           ))}
         </div>
 
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -67,14 +68,16 @@ function Working() {
           <p className="text-white text-xl font-semibold mb-8">
             Ready to get started?
           </p>
-          <Image
-            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-            alt="Download on App Store"
-            width={150}
-            height={50}
-            className="mx-auto hover:opacity-80 transition-opacity cursor-pointer"
-          />
-        </motion.div> */}
+          <Link href={"https://apps.apple.com/gb/app/alc-ai/id6739513699"}>
+            <Image
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="Download on App Store"
+              width={150}
+              height={50}
+              className="mx-auto hover:opacity-80 transition-opacity cursor-pointer"
+            />
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
